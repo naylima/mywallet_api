@@ -20,6 +20,7 @@ async function hasToken (req, res, next) {
         });
 
         res.locals.user = user;
+        res.locals.token = token;
 
         next(); 
 

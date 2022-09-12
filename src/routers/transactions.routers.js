@@ -1,5 +1,5 @@
 import express from 'express';
-import authorizationMiddleware from '../middlewares/authorization.middleware.js'
+import authorizationMiddleware from '../middlewares/authorization.middleware.js';
 import * as transactionsController from '../controllers/transactions.controller.js';
 
 const router = express.Router();

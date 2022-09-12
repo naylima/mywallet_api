@@ -3,7 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 
 import authRouter from './routers/auth.routers.js'
-import userRouter from './routers/use.routers.js'
+import userRouter from './routers/user.routers.js'
 import transactionsRouter from './routers/transactions.routers.js'
 
 dotenv.config();
