@@ -11,7 +11,7 @@ const signUp = async (req, res) => {
     const userSchema = joi.object ({
         name: joi.string().required().empty(' '),
         email: joi.string().email().required().empty(' '),
-        password: joi.string().required(),
+        password: joi.string().min(3).max(10).required(),
         repeat_password: joi.valid(joi.ref('password')).required()
     });
 
